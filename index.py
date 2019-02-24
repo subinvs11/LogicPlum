@@ -21,7 +21,6 @@ def upload():
         file_name = secure_filename(f.filename)
         try:
             extension = file_name.split('.')[1]
-            print ('extension -> ',extension)#zzz
             if extension.lower() != 'csv':
                 error = 'Invalid file. Please upload a csv file.'
         except:
